@@ -1,5 +1,12 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import Projects from "./components/Projects";
+import { TypeAnimation } from "react-type-animation";
+import { use } from "react";
+import HeroName from "./components/HeroName";
+import JobTitle from "./components/JobTitle";
+
 export default function Home() {
   return (
     <>
@@ -7,12 +14,8 @@ export default function Home() {
         id="home"
         className="bg-white px-8 pt-30 pb-20 border-b border-gray-200"
       >
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2">
-          Kevin Koudelka
-        </h1>
-        <h2 className="text-2xl md:text-3xl font-normal text-gray-800 mb-4">
-          Software Developer
-        </h2>
+        <HeroName />
+        <JobTitle />
         <p className="text-lg md:text-xl text-gray-700 mb-8">
           I am a software developer with a passion for creating innovative
           solutions.
@@ -56,9 +59,15 @@ export default function Home() {
         className="bg-white px-8 pt-24 pb-20 border-b border-gray-200"
       >
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Projects
           </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Projects title="Project One" description="Description" />
+          <Projects title="Project Two" description="Description" />
+          <Projects title="Project Three" description="Description" />
+          <Projects title="Project Four" description="Description" />
         </div>
       </section>
       <section id="resume" className="bg-white px-8 pt-24 pb-20">
@@ -81,9 +90,12 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
               Education
             </h2>
-            <h3 className="text-2xl md:text-xl font-bold text-gray-800 mb-4">
+            <h3 className="text-2xl md:text-xl font-bold text-gray-800">
               Bachelor of Science in Computer Science
             </h3>
+            <h4 className="text-xl md:text-xl font-bold text-gray-800 mb-4">
+              Minor in Cybersecurity
+            </h4>
             <p className="text-lg md:text-xl text-gray-700">
               University of Delaware
             </p>
