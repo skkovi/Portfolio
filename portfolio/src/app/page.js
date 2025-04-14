@@ -3,7 +3,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <section className="bg-white px-8 pt-30 pb-20 border-b border-gray-200">
+      <section
+        id="home"
+        className="bg-white px-8 pt-30 pb-20 border-b border-gray-200"
+      >
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2">
           Kevin Koudelka
         </h1>
@@ -21,7 +24,10 @@ export default function Home() {
           View Projects
         </Link>
       </section>
-      <section className="bg-white px-8 pt-24 pb-20 border-b border-gray-200">
+      <section
+        id="about"
+        className="bg-white px-8 pt-24 pb-20 border-b border-gray-200"
+      >
         <div className="flex flex-col md:flex-row items-start gap-4">
           <div className="w-50">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
@@ -45,20 +51,43 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white px-8 pt-24 pb-20">
+      <section
+        id="projects"
+        className="bg-white px-8 pt-24 pb-20 border-b border-gray-200"
+      >
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+            Projects
+          </h2>
+        </div>
+      </section>
+      <section id="resume" className="bg-white px-8 pt-24 pb-20">
         <div className="flex flex-col md:flex-row justify-center gap-25">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
               Resume
             </h2>
-            <h3>
+            <h3 className="text-2xl md:text-xl font-normal text-gray-800 mb-4">
               Get in <b>Touch</b>
             </h3>
+            <p className="text-lg md:text-xl text-gray-700 mb-4">
+              Feel free to reach out to me via email!
+            </p>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+              Email Me
+            </button>
           </div>
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
               Education
             </h2>
+            <h3 className="text-2xl md:text-xl font-bold text-gray-800 mb-4">
+              Bachelor of Science in Computer Science
+            </h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              University of Delaware
+            </p>
+            <p className="text-lg md:text-md text-gray-700 mb-4">2018-2022</p>
           </div>
         </div>
       </section>
