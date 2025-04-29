@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function Nav() {
+export default function Navbar() {
   return (
     <header className="w-full px-8 py-2 flex justify-between items-center shadow bg-white fixed top-0 left-0 z-50">
       <div className="text-xl text-black font-bold">Kevin Koudelka</div>
