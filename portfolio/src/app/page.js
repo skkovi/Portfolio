@@ -140,10 +140,30 @@ export default function Home() {
             </div>
             <div className="w-full">
               <p className="text-lg md:text-xl text-gray-700 mb-4">
-                I am a software developer with a passion for creating innovative
-                solutions. I have experience in web development, mobile
-                development, and cloud computing. I am a team player and I am
-                always looking to learn new skills and technologies.
+                I am a versatile Software Engineer with over three years of
+                experience delivering full-stack, embedded, and cloud-based
+                applications. My expertise encompasses a range of technologies,
+                including JavaScript, Node.js, React, Python, and Firebase,
+                enabling me to design and implement scalable solutions.
+                Throughout my career at Nagarro Inc., I have consistently
+                focused on developing efficient and user-friendly applications,
+                contributing to projects such as the creation of multilingual
+                digital forms to enhance accessibility and the development of an
+                internal inventory tracking system. I am passionate about
+                leveraging my technical skills to solve complex problems and
+                drive positive outcomes.
+              </p>
+              <p className="text-lg md:text-xl text-gray-700 mb-4">
+                My experience includes engineering a quality control protocol
+                for the NYC Department of Education and streamlining the
+                production of digital forms for the Department of Labor. I have
+                a proven track record of collaborating effectively within Agile
+                teams, ensuring on-time delivery, and providing key support
+                through maintenance and issue resolution. I am committed to
+                producing high-quality work, demonstrated by my selection to
+                support testing environment operations, and I strive to apply my
+                skills to create solutions that improve efficiency, enhance user
+                experience, and meet client needs.
               </p>
             </div>
           </div>

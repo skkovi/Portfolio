@@ -1,7 +1,24 @@
+import { useRef, useEffect } from "react";
+
 export default function Modal(props) {
+  const modalRef = useRef();
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        props.onClose();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [props.onClose]);
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm z-50 pointer-events-auto">
-      <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-xl space-y-4 transition duration-300 ease-out scale-100 animate-[fadeIn_0.3s_ease-out_forwards]">
+      <div
+        ref={modalRef}
+        className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-xl space-y-4 transition duration-300 ease-out scale-100 animate-[fadeIn_0.3s_ease-out_forwards]"
+      >
         <h2 className="text-lg font-bold text-gray-900">{props.title}</h2>
         <p className="text-sm text-gray-600 leading-relaxed">
           {props.description}
