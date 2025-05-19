@@ -2,11 +2,11 @@
 
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // ✅ use slim version
+import { loadSlim } from "tsparticles-slim";
 
 export default function BackgroundParticles() {
   const particlesInit = useCallback(async (engine) => {
-    await loadSlim(engine); // ✅ fix the checkVersion error
+    await loadSlim(engine);
   }, []);
 
   return (
@@ -38,7 +38,7 @@ export default function BackgroundParticles() {
           events: {
             onHover: {
               enable: true,
-              mode: "repulse", // or 'grab', 'bubble'
+              mode: "repulse",
             },
             onClick: {
               enable: true,
