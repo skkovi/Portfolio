@@ -57,6 +57,12 @@ let projects = [
     ],
   },
 ];
+const skills = {
+  Frontend: ["React", "Next.js", "Tailwind CSS", "HTML", "CSS"],
+  Backend: ["Node.js", "Express", "Firebase", "Supabase", "SQL"],
+  Languages: ["JavaScript", "Python", "TypeScript"],
+  Tools: ["Git", "Azure", "VS Code", "Postman"],
+};
 
 export default function Home() {
   let [showModal, setShowModal] = useState(false);
@@ -106,7 +112,7 @@ export default function Home() {
                       speed={40}
                       wrapper="p"
                       cursor={false}
-                      delay={1500} // delay typing until first line finishes
+                      delay={1500}
                     />
                     <TypeAnimation
                       sequence={["> Scroll down to learn more!"]}
@@ -165,6 +171,13 @@ export default function Home() {
                 skills to create solutions that improve efficiency, enhance user
                 experience, and meet client needs.
               </p>
+              <p className="text-lg md:text-xl text-gray-700 mb-4">
+                I’m passionate about solving real-world problems with clean,
+                efficient code, and I bring a user-focused mindset to everything
+                I build. I’m currently seeking opportunities to join a
+                collaborative engineering team where I can continue growing my
+                skills and contribute to impactful, product-driven development.
+              </p>
             </div>
           </div>
         </section>
@@ -206,8 +219,42 @@ export default function Home() {
             })}
           </div>
         </section>
-        <section id="resume" className="px-8 pt-24 pb-20">
-          <div className="flex flex-col md:flex-row justify-center gap-25">
+        <section id="resume" className="flex px-8 pt-24 pb-20">
+          <div className="flex-1">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+              Skills
+            </h2>
+            <div className="max-w-3xl">
+              <table className="min-w-full border border-gray-200 dark:border-gray-700">
+                <thead>
+                  <tr className="bg-gray-100 dark:bg-gray-800 text-left">
+                    <th className="px-4 py-3 border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100">
+                      Category
+                    </th>
+                    <th className="px-4 py-3 border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100">
+                      Skills
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.entries(skills).map(([category, skills]) => (
+                    <tr
+                      key={category}
+                      className="border-t border-gray-200 dark:border-gray-700"
+                    >
+                      <td className="px-4 py-3 font-medium text-gray-900">
+                        {category}
+                      </td>
+                      <td className="px-4 py-3 text-gray-800">
+                        {skills.join(", ")}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div className="flex flex-col mx-16 md:flex-row justify-center gap-25">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                 Resume
