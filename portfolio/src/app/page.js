@@ -140,18 +140,18 @@ export default function Home() {
             </div>
             <div className="w-full">
               <p className="text-lg md:text-xl text-gray-700 mb-4">
-                I am a versatile Software Engineer with over three years of
-                experience delivering full-stack, embedded, and cloud-based
-                applications. My expertise encompasses a range of technologies,
-                including JavaScript, Node.js, React, Python, and Firebase,
-                enabling me to design and implement scalable solutions.
-                Throughout my career at Nagarro Inc., I have consistently
-                focused on developing efficient and user-friendly applications,
-                contributing to projects such as the creation of multilingual
-                digital forms to enhance accessibility and the development of an
-                internal inventory tracking system. I am passionate about
-                leveraging my technical skills to solve complex problems and
-                drive positive outcomes.
+                I am a versatile Software Engineer with a BS in Computer Science
+                and over three years of experience delivering full-stack,
+                embedded, and cloud-based applications. My expertise encompasses
+                a range of technologies, including JavaScript, Node.js, React,
+                Python, and Firebase, enabling me to design and implement
+                scalable solutions. Throughout my career at Nagarro Inc., I have
+                consistently focused on developing efficient and user-friendly
+                applications, contributing to projects such as the creation of
+                multilingual digital forms to enhance accessibility and the
+                development of an internal inventory tracking system. I am
+                passionate about leveraging my technical skills to solve complex
+                problems and drive positive outcomes.
               </p>
               <p className="text-lg md:text-xl text-gray-700 mb-4">
                 My experience includes engineering a quality control protocol
@@ -221,6 +221,24 @@ export default function Home() {
               <a href="mailto:skkovi14@gmail.com">
                 <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                   Email Me
+                </button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kevin-koudelka/"
+                target="_blank"
+                className="ml-4"
+              >
+                <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                  LinkedIn
+                </button>
+              </a>
+              <a
+                href="https://github.com/skkovi"
+                target="_blank"
+                className="ml-4"
+              >
+                <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                  Github
                 </button>
               </a>
             </div>
